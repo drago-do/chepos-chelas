@@ -1,0 +1,46 @@
+.tarjeta-flotante {
+  background-color: #ffffff;
+  z-index: +1;
+  position: fixed;
+  /* top: 85vh; */
+  width: 90%;
+  max-height: 1500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 30px;
+
+  border: solid 1px #000;
+
+  /* transition: top 0.5s; */
+  overflow: auto;
+}
+.activador-tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.activador-tarjeta p {
+  margin: 0;
+}
+
+#icono-flecha {
+  transition: transform 0.5s;
+}
+
+.contenedor-pendientes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-completados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
