@@ -26,7 +26,6 @@ export default function PendientesYCompletados() {
     setvalorTopTarjeta(parseInt(valorTopTarjeta) + parseInt(desplazamiento));
     elemento.style.top = valorTopTarjeta + "px";
     setposicionInicial(nuevoMovimiento);
-    console.log(valorTopTarjeta);
     icono.style.transform =
       valorTopTarjeta > 300 ? "rotate(0deg)" : "rotate(180deg)";
   };
@@ -36,25 +35,23 @@ export default function PendientesYCompletados() {
     let valorTopTarjeta;
     try {
       valorTopTarjeta = elemento.style.top;
-      console.log("ojo" + valorTopTarjeta);
     } catch (error) {
       valorTopTarjeta = valorTopTarjetaInicial.substring(
         0,
         valorTopTarjetaInicial.length - 2
       );
     }
-    console.log("Valor de top tarjeta" + valorTopTarjeta);
     setvalorTopTarjeta(valorTopTarjeta);
   };
 
   const finalCapturaTouch = (event) => {
+    let top75vhAPixeles = (75 * window.screen.height) / 100;
+    let top10vhAPixeles = (10 * window.screen.height) / 100;
     if (valorTopTarjeta > 300) {
       elemento.style.transition = "top 0.5s";
-      let top75vhAPixeles = (75 * window.screen.height) / 100;
       elemento.style.top = top75vhAPixeles + "px";
     } else {
       elemento.style.transition = "top 0.5s";
-      let top10vhAPixeles = (10 * window.screen.height) / 100;
       elemento.style.top = top10vhAPixeles + "px";
     }
     icono.style.transform =
