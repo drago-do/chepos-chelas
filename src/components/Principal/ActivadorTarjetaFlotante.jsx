@@ -1,8 +1,8 @@
 import React from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
-import "./../../CSS/CPrincipalMeseros/PendientesYCompletados.css";
+import "./../../CSS/Principal/TarjetaFlotante.css";
 
-export default function MostrarOcultarPendientes() {
+export default function ActivadorTarjetaFlotante({ titulo }) {
   const [mostrar, setmostrar] = React.useState(true);
   const switchTarjeta = (event) => {
     const elemento = document.getElementsByClassName("tarjeta-flotante")[0];
@@ -35,7 +35,7 @@ export default function MostrarOcultarPendientes() {
           style={{ fontSize: "30px", fontWeight: "bolder", margin: "0" }}
         />
       </div>
-      <p>Pendiente y completado</p>
+      <p>{titulo}</p>
     </div>
   );
 }

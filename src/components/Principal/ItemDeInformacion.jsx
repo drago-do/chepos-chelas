@@ -1,7 +1,7 @@
 import React from "react";
 
 //*Importar el CSS
-import "./../../CSS/CPrincipalMeseros/ItemDeInformacion.css";
+import "./../../CSS/Principal/ItemDeInformacion.css";
 export default function ItemDeInformacion({
   numeroid,
   producto,

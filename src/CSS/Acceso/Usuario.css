@@ -1,0 +1,17 @@
+.usuario-avatar {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-avatar {
+  transition: all 0.2s ease-out;
+}
+
+.usuario-activo img {
+  border: 5px solid #00bcd4;
+  border-radius: 50%;
+  transform: scale(1.1);
+}
