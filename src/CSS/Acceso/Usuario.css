@@ -6,8 +6,13 @@
   justify-content: center;
 }
 
+.usuario-avatar p {
+  margin: 4px;
+}
+
 .imagen-avatar {
-  transition: all 0.2s ease-out;
+  max-height: 100%;
+  transition: all 0.2s ease-in-out;
 }
 
 .usuario-activo img {

@@ -1,15 +1,44 @@
+/* !Tamanos de partes de interfaz */
+div .acceso-principal .elemento-barra-navegacion {
+  height: 10%;
+}
+
+div .acceso-principal .titulo-inicia-sesion {
+  margin: 2px;
+  height: 7%;
+}
+div .acceso-principal .contenedor-usuarios {
+  height: 22%;
+}
+div .contenedor-usuarios + p {
+  padding: 0;
+  margin: 0;
+}
+div .contenedor-contrasena {
+  height: 6%;
+}
+
+div .contenedor-teclado {
+  height: 55%;
+}
+
 .acceso-principal {
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .contenedor-usuarios {
-  width: 70%;
+  max-width: 90%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: nowrap;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
