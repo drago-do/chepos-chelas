@@ -2,19 +2,15 @@
   background-color: #ffffff;
   z-index: +1;
   position: fixed;
-  /* top: 85vh; */
+  top: 85vh;
   width: 90%;
   min-height: 80vh;
   max-height: 1500px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding-bottom: 30px;
-
   border: solid 1px #000;
-
   /* transition: top 0.5s; */
   overflow: auto;
 }

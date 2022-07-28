@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 //* Importar componentes de la vista
 import ElementoBarraNavegacion from "./ElementoBarraNavegacion";
@@ -15,16 +15,13 @@ export default function Acceso() {
   let navigate = useNavigate();
 
   const verificarContraseña = () => {
-    // !Mejorar esta implementacion
     if (contraseña === "5454" && usuario === "Jonathan") {
-      // return navigate("/administracion");
-      <Navigate replace to="/administacion" />;
-      console.log("hola");
+      return navigate("/administracion");
     }
     if (contraseña === "5454" && usuario === "Josh") {
       return navigate("/caja");
     }
-    if (contraseña === "5454" && usuario === "Juan") {
+    if (contraseña === "5454" && usuario === "Poly") {
       return navigate("/orden-mesero");
     }
     console.log("Contraseña incorrecta");
@@ -73,9 +70,9 @@ export default function Acceso() {
 
   return (
     <>
-      <div className="acceso-principal">
-        <ElementoBarraNavegacion tituloActividad="Acceder a Aplicación" />
+      <ElementoBarraNavegacion tituloActividad="Acceder a Aplicación" />
 
+      <div className="acceso-principal">
         <h1 className="titulo-inicia-sesion">Inicia Sesión</h1>
 
         <div className="contenedor-usuarios" onClick={seleccionUsuario}>

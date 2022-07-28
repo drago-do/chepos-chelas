@@ -1,9 +1,11 @@
 .elemento-barra-navegacion {
+  position: fixed;
+  z-index: +1;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
 }
 .regresar-y-cerrar {
   background-color: #eee;

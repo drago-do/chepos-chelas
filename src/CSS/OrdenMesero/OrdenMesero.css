@@ -1,0 +1,48 @@
+.orden-meseros {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: 100%;
+}
+
+.contenedor-de-productos {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 75%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.categoria-menu {
+  margin: 1% 0;
+  width: 100%;
+  border: 3px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.imagen-categoria {
+  width: 20%;
+  height: 80%;
+  border: 3px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.informacion-categoria {
+  margin-left: 20px;
+}
+.nombre-principal {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
